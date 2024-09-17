@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #e5e7ef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 130vh;
+            margin: 0;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 30px;
+            width: 350px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 0px;
+        }
+        
+        .card img {
+            width: 100%;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+        
+        .card h2 {
+            margin: 20px 0;
+            font-size: 1.5rem;
+            color: #333;
+        }
+        
+        .card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .plan {
+            display: flex;
+            align-items: center;
+            background-color: #f0f0f5;
+            padding: 20px;
+            border-radius: 20px;
+            margin: 0 10px 20px 10px;
+        }
+        
+        .plan img {
+            width: 30px;
+            height: 30px;
+            margin-right: 20px;
+            /* Space between image and text */
+        }
+        
+        .plan-text {
+            display: flex;
+            flex: 1;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .plan-text .plan-label {
+            font-weight: bold;
+            font-size: 1rem;
+            flex: 1;
+        }
+        
+        .change-link {
+            color: #3455e7;
+            cursor: pointer;
+            text-decoration: underline;
+            font-size: 0.9rem;
+            margin-left: 10px;
+        }
+        
+        .plan-text .plan-price {
+            color: #666;
+            font-size: 0.8rem;
+            flex: 1;
+        }
+        
+        .btn {
+            background-color: #3455e7;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 80%;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .btn:hover {
+            background-color: #2a47c5;
+        }
+        
+        .btn.cancel {
+            background-color: #e0e0e0;
+            color: #333;
+            border-radius: 20px;
+            padding: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .btn.cancel:hover {
+            background-color: #c5c5c5;
+        }
+        
+        @media (max-width: 600px) {
+            .card {
+                width: 100%;
+                padding: 10px;
+            }
+            .card h2 {
+                font-size: 1.2rem;
+            }
+            .card p {
+                font-size: 0.9rem;
+            }
+            .btn {
+                width: 100%;
+                padding: 12px;
+                font-size: 1rem;
+            }
+            .plan img {
+                width: 40px;
+                height: 40px;
+            }
+            .change-link {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="image">
+            <img src="./images/illustration-hero.svg" alt="Order Summary">
+        </div>
+        <h2>Order Summary</h2>
+        <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+        <div class="plan">
+            <img src="./images/icon-music.svg" alt="Music Icon">
+            <div class="plan-text">
+                <div class="plan-label">Annual Plan</div>
+                <div class="plan-price">$59.99/year</div>
+                <div class="change-link">Change</div>
+            </div>
+        </div>
+        <button class="btn">Proceed to Payment</button>
+        <button class="btn cancel">Cancel Order</button>
+    </div>
+
+</body>
+
+</html>
